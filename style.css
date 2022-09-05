@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+:root{
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+    --font: 'Raleway', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font);
+    font-size: small;
+    height: 100vh;
+    background-image: url("./images/bg-mobile.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+main{
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 300px;
+    height: 200px;
+    margin-top: 3em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    border-top-right-radius: 40%;
+    background-color: var(--DarkBlue);
+}
+.container__logo{
+    margin: 1em;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 1em;
+}
+.icons__item{
+    font-size: 24px;
+    color: #697ED4;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: .5em;
+    background-color: var(--VeryDarkBlue);
+    border-radius: .5em;
+    
+}
+
+.info{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DarkBlue);
+    margin-top: 2em;
+    padding: 2em;
+
+}
+.barra-container{
+    margin-top: 1em;
+    margin-left: 0px;
+    width: 240px;
+    background-color: var(--VeryDarkBlue);
+    border-radius: 10px;
+    height: 20px;
+}
+.barra{ 
+    /* appearance: none; */
+    width: 85%; /* Full-width */
+    height: 8px;
+    border-radius: 10px;
+    background: #ffa399;
+ 
+}
+
+.info__paragraph{
+    text-align: center;
+    margin-top: 3em;
+    color: #fff;
+    font-size: 1.1em;
+}
+.white,.alm-info{
+    color: #fff;
+}
+.alm-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.restante-alm{
+    margin: 0em;
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    padding-top: .5em;
+    transform: translateY(45px);
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: .7em;
+    border-radius: 5px;
+}
+.text-Dark{
+    color: var(--GrayishBlue);
+    font-size: .7em;
+}
+/* desktop mood */
+@media(min-width:800px){
+    body{
+        font-family: var(--font);
+        font-size: small;
+        background-image: url("./images/bg-desktop.png");
+    }
+   
+    main{
+        flex-direction:row;
+    
+       
+    }
+    .info{
+        margin-top: 6em;
+        margin-left: 2em;
+        width: 380px;
+    }
+    .barra-container{
+        margin-top: 1em;
+        margin-left: 0px;
+        width: 95%;
+        background-color: var(--VeryDarkBlue);
+        border-radius: 10px;
+        height: 20px;
+    }
+  
+    
+    .restante-alm::after{
+        content: "";
+        position: relative;
+        left: 160px;
+        top: 40px;
+        display: block;
+        width: 20px;
+        height: 15px;
+        transform: rotate(120deg) translateY(59px) translateX(-10px) ;
+        border-bottom-right-radius: 90px;
+        border-top-left-radius: 45px;
+        background: #fff;
+    }
+    .restante-alm{
+        width: 150px;
+        height: 50px;
+        transform: translate(98px,-110px);
+    }
+    .alm-info{
+    gap: 3em;
+    align-items: flex-start;
+    }
+}
+
+@media(min-width:800px){
+    .info{
+        margin-top: 6em;
+        margin-left: 2em;
+        width: 500px;
+    }
+    .restante-alm::after{
+        content: "";
+        position: relative;
+        left: 160px;
+        top: 40px;
+        display: block;
+        width: 20px;
+        height: 15px;
+        transform: rotate(120deg) translateY(59px) translateX(-10px) ;
+        border-bottom-right-radius: 90px;
+        border-top-left-radius: 45px;
+        background: #fff;
+    }
+    .restante-alm{
+        width: 150px;
+        height: 50px;
+        transform: translate(150px,-110px);
+    }
+    .alm-info{
+    gap: 7em;
+  
+    }
+}

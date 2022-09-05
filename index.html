@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+<body>
+  <main>
+    <div class="container">
+      <img class="container__logo" src="./images/logo.svg" alt="#">
+      <div class="icons">
+        <i class="fa-solid fa-file icons__item"></i>
+        <i class="fa-solid fa-folder icons__item"></i>
+        <i class="fa-solid fa-cloud-arrow-up icons__item "></i>       
+      </div>
+    </div>
+
+    <div class="info">
+      <p class="info__paragraph"> You’ve used <b class="white">815 GB</b> of your storage</p>
+      <div class="barra-container">
+        <input class="barra" type="range" min="0" max="1000" value="815">
+      </div>
+      <p class="alm-info"> 0 GB<span class="restante-alm"> 185 <span class="text-Dark">GB Left</span> </span>1000 GB</p>
+    </div>
+    
+  </main>
+  
+</body>
+</html>
