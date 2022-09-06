@@ -178,7 +178,7 @@ main{
     }
 }
 
-@media(min-width:800px){
+@media(min-width:1024px){
     .info{
         margin-top: 6em;
         margin-left: 2em;
